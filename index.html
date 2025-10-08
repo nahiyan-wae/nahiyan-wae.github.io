@@ -1,255 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Nahiyan — Cybersecurity Expert & WAE Leader</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta name="description" content="Nahiyan — Cybersecurity expert, ethical hacker & psychology specialist. Leader of WAE, a global cybersecurity collective focused on data protection and digital resilience.">
-<meta name="keywords" content="Nahiyan, ethical hacker, cybersecurity expert, WAE group, data protection, psychology and hacking, cyber intelligence, hacker leader, cyber defense specialist, Nahiyan WAE">
-<meta name="author" content="Nahiyan">
-<meta name="robots" content="index,follow">
+  <title>Nahiyan — Cybersecurity & Justice Leader</title>
+  <meta name="description"
+        content="Official portfolio of Nahiyan — cybersecurity specialist and psychology expert focused on ethical digital defense and data protection." />
+  <meta name="keywords"
+        content="Nahiyan, cybersecurity expert, ethical hacker, WAE, psychology, data protection, digital justice, cyber defense" />
+  <meta name="author" content="Nahiyan" />
+  <meta name="robots" content="index, follow" />
 
-<!-- Open Graph / Social preview -->
-<meta property="og:title" content="Nahiyan — Cybersecurity Expert & WAE Leader">
-<meta property="og:description" content="Leader of WAE, defending data and advancing digital justice.">
-<meta property="og:image" content="https://nahiyan-wae.github.io/profile.png">
-<meta property="og:type" content="profile">
-<meta property="og:site_name" content="Nahiyan WAE">
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Nahiyan — Cybersecurity Expert & WAE Leader" />
-<meta name="twitter:description" content="Leader of WAE, defending data and advancing digital justice." />
-<meta name="twitter:image" content="https://nahiyan-wae.github.io/profile.png" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nahiyan — Cybersecurity & Justice Leader" />
+  <meta property="og:description"
+        content="Nahiyan is a cybersecurity and psychology specialist leading ethical digital-protection initiatives." />
+  <meta property="og:image" content="https://nahiyan-wae.github.io/profile.png" />
+  <meta property="og:url" content="https://nahiyan-wae.github.io/" />
 
-<!-- JSON-LD Person -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Nahiyan",
-  "jobTitle": "Cybersecurity Expert, Ethical Hacker, Psychology Specialist",
-  "description": "Nahiyan is a cybersecurity and psychology specialist and leader of WAE, a global collective focused on data protection and digital justice.",
-  "image": "https://nahiyan-wae.github.io/profile.png",
-  "url": "https://nahiyan-wae.github.io",
-  "sameAs": []
-}
-</script>
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nahiyan",
+    "url": "https://nahiyan-wae.github.io/",
+    "jobTitle": "Cybersecurity & Justice Leader",
+    "description": "Cybersecurity and psychology specialist focused on ethical digital defense and data protection.",
+    "image": "https://nahiyan-wae.github.io/profile.png"
+  }
+  </script>
 
-<style>
-:root{
-  --bg1:#030406;
-  --bg2:#071018;
-  --panel:rgba(12,20,26,0.6);
-  --accent1:#00f0bf;
-  --accent2:#00a8ff;
-  --danger:#ff3b3b;
-  --muted:#94fff0;
-  --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-}
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;background:radial-gradient(1000px 400px at 10% 10%,rgba(0,200,160,0.03),transparent), linear-gradient(180deg,var(--bg1),var(--bg2));color:#cffef6;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial}
-.container{max-width:1100px;margin:28px auto;padding:22px}
-.panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:14px;border:1px solid rgba(0,255,195,0.04);box-shadow:0 30px 80px rgba(0,0,0,0.6);position:relative;overflow:hidden}
-.panel:before{content:"";position:absolute;inset:0;background:
-  radial-gradient(700px 200px at 8% 0%, rgba(0,255,195,0.02), transparent 10%),
-  radial-gradient(700px 200px at 96% 100%, rgba(255,59,59,0.02), transparent 10%);pointer-events:none}
-.scanline{position:absolute;left:-40%;top:0;width:180%;height:2px;background:linear-gradient(90deg,transparent,var(--accent1),transparent);filter:blur(6px);opacity:.9;animation:scan 6s linear infinite}
-@keyframes scan{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
-
-/* header layout */
-.row{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
-.avatar{width:160px;height:160px;border-radius:50%;overflow:hidden;border:4px solid rgba(0,255,195,0.12);flex:0 0 160px;background:linear-gradient(180deg, rgba(0,255,195,0.03), rgba(0,255,195,0.01));display:flex;align-items:center;justify-content:center}
-.avatar img{width:100%;height:100%;object-fit:cover;display:block}
-.title{flex:1;min-width:220px}
-h1{font-size:22px;margin:0;color:var(--accent1);text-shadow:0 6px 28px rgba(0,255,195,0.04)}
-.tag{margin-top:8px;color:#bfffe8;font-weight:700}
-.lead{color:#d7fff7;margin-top:16px;line-height:1.6;max-width:920px}
-
-/* CTA */
-.actions{margin-top:16px}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 26px;border-radius:999px;border:0;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#021017;font-weight:800;cursor:pointer;box-shadow:0 18px 40px rgba(0,198,255,0.08)}
-.btn:active{transform:translateY(1px)}
-.badge{display:inline-block;padding:6px 10px;border-radius:8px;background:linear-gradient(90deg, rgba(255,59,59,0.08), rgba(0,0,0,0.06));color:var(--danger);font-weight:800;margin-left:14px}
-
-/* keywords box */
-.meta-box{margin-top:22px;padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(0,0,0,0.25),rgba(255,255,255,0.01));border:1px solid rgba(0,255,195,0.03);color:var(--muted);font-size:13px}
-
-/* overlay terminal */
-.overlay{position:fixed;inset:0;display:none;z-index:9999;padding:28px;background:linear-gradient(180deg,rgba(0,0,0,0.9),rgba(1,1,2,0.98));backdrop-filter:blur(4px)}
-.term{max-width:880px;margin:30px auto;background:#000;border-radius:12px;padding:14px;border:1px solid rgba(0,255,195,0.04);box-shadow:0 40px 120px rgba(0,0,0,0.8);position:relative}
-.term .top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
-.dot{width:12px;height:12px;border-radius:50%}
-.dot.r{background:#ff6b6b}
-.dot.y{background:#ffd26a}
-.dot.g{background:#27c93f}
-.term h3{margin-left:auto;color:#9fffe8}
-.console{background:#020202;border-radius:8px;padding:14px;min-height:260px;color:var(--accent1);font-family:var(--mono);font-size:14px;line-height:1.6;overflow:auto}
-.progress{margin-top:12px}
-.progress-bg{height:12px;background:linear-gradient(90deg,#021416,#021416);border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,0.02)}
-.progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--accent1),var(--accent2));transition:width 220ms linear}
-.progress-row{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--mono);color:#8fffe0}
-.close{position:absolute;right:10px;top:10px;border:0;background:transparent;color:#9fffe8;padding:6px 10px;border-radius:8px}
-
-/* small screens */
-@media (max-width:720px){
-  .row{flex-direction:column;align-items:center}
-  .avatar{width:132px;height:132px}
-  h1{font-size:20px}
-  .btn{width:100%}
-}
-footer{max-width:1100px;margin:10px auto;text-align:center;color:#6effdb;font-size:12px}
-</style>
+  <style>
+    body {
+      margin: 0;
+      background-color: #020617;
+      color: #e0f2ff;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #60a5fa;
+      text-shadow: 0 0 20px #3b82f6;
+      margin-bottom: .5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+    .profile {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .profile img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      box-shadow: 0 0 30px #3b82f6;
+    }
+    .about {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.8;
+      font-size: 1.05rem;
+      padding: 0 1.2rem;
+    }
+    .explore-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+      color: #e0f2ff;
+      background: transparent;
+      border: 2px solid #3b82f6;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all .3s;
+    }
+    .explore-btn:hover {
+      background: #3b82f6;
+      box-shadow: 0 0 20px #60a5fa;
+    }
+    #console {
+      display: none;
+      max-width: 700px;
+      margin: 2rem auto;
+      background: #0f172a;
+      border-radius: 10px;
+      box-shadow: 0 0 25px #1e40af;
+      padding: 1rem;
+      font-family: monospace;
+      color: #60a5fa;
+      text-align: left;
+      white-space: pre-line;
+      line-height: 1.4;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <h1>Nahiyan — Cybersecurity & Justice Leader</h1>
+    <p>Ethical cybersecurity | Digital defense | Psychological insight</p>
+  </header>
 
-<div class="container">
-  <div class="panel" role="main" aria-label="Nahiyan profile">
-    <div class="scanline" aria-hidden="true"></div>
-
-    <div class="row">
-      <div class="avatar" aria-hidden="false">
-        <img src="profile.png" alt="Nahiyan profile image" id="avatar">
-      </div>
-
-      <div class="title">
-        <h1>Nahiyan — Cybersecurity Expert, Ethical Hacker & Psychology Specialist</h1>
-        <div class="tag">Lead, WAE · Cyber defense · Psychology & Threat Hunting <span class="badge">WAE</span></div>
-
-        <p class="lead">
-          I’m <strong>Nahiyan</strong> — a cybersecurity specialist, psychology expert, and ethical hacker. I lead WAE, a global collective of over 2 million professionals that defends critical systems, protects data, and advances digital justice.
-        </p>
-
-        <div class="actions">
-          <button id="exploreBtn" class="btn" aria-controls="overlay" aria-haspopup="dialog">▶ Explore More</button>
-        </div>
-
-        <div class="meta-box" aria-hidden="false"><strong>Keywords:</strong> Nahiyan, ethical hacker, cybersecurity expert, WAE group, data protection, psychology and hacking, cyber intelligence, hacker leader, cyber defense specialist, Nahiyan WAE</div>
-      </div>
-    </div>
+  <div class="profile">
+    <img src="profile.png" alt="Nahiyan profile image">
   </div>
-</div>
 
-<!-- Terminal overlay (visual simulation only; no systems are accessed) -->
-<div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-hidden="true">
-  <div class="term" role="document">
-    <button id="closeBtn" class="close">Close ✕</button>
-    <div class="top">
-      <div class="dot r" aria-hidden="true"></div>
-      <div class="dot y" aria-hidden="true"></div>
-      <div class="dot g" aria-hidden="true"></div>
-      <h3>Nahiyan · WAE Console</h3>
-    </div>
+  <section class="about">
+    <p>
+      Nahiyan is a cybersecurity specialist and psychology expert dedicated to safeguarding
+      information and promoting digital responsibility. As the visionary behind WAE, he works to
+      strengthen organizations’ defenses, uncover threats, and champion secure technology use
+      for global data protection and justice.
+    </p>
+    <button class="explore-btn" onclick="runConsole()">Explore</button>
+  </section>
 
-    <div id="console" class="console" tabindex="0" aria-live="polite"></div>
+  <div id="console"></div>
 
-    <div class="progress" aria-hidden="false">
-      <div class="progress-bg"><div id="fill" class="progress-fill"></div></div>
-      <div class="progress-row"><div id="plabel">Initializing...</div><div id="ppct">0%</div></div>
-    </div>
+  <footer>Powered by Nahiyan | WAE</footer>
 
-    <div style="text-align:right;margin-top:10px;color:#7fffd3;font-size:12px">Visual simulation — no systems are accessed.</div>
-  </div>
-</div>
-
-<footer>© Nahiyan · WAE — Portfolio & visibility</footer>
-
-<script>
-/*
-  Purely visual terminal animation. No attempts to access systems or data.
-  The script types lines, advances a progress bar, and ends with ACCESS GRANTED.
-*/
-(function(){
-  const exploreBtn = document.getElementById('exploreBtn');
-  const overlay = document.getElementById('overlay');
-  const closeBtn = document.getElementById('closeBtn');
-  const consoleEl = document.getElementById('console');
-  const fill = document.getElementById('fill');
-  const plabel = document.getElementById('plabel');
-  const ppct = document.getElementById('ppct');
-
-  const lines = [
-    "bootstrapping WAE console...",
-    "loading public profile: nahiyan_profile_public",
-    "scanning listed public sources: about.me, github, google-sites",
-    "verifying public metadata (read-only)",
-    "aggregating social links (public)",
-    "generating public profile snapshot (visual)",
-    "rendering defense topology (visual overlay)",
-    "synthesizing secure report (visual)",
-    "finalizing console..."
-  ];
-
-  // types a single line to console
-  function typeLine(text, speed=10){
-    return new Promise(resolve=>{
-      let i=0;
-      const interval = setInterval(()=>{
-        consoleEl.textContent += text.charAt(i);
-        consoleEl.scrollTop = consoleEl.scrollHeight;
+  <script>
+    function runConsole() {
+      const consoleBox = document.getElementById("console");
+      const lines = [
+        "Initializing secure systems...",
+        "Verifying identity: Nahiyan",
+        "Access granted.",
+        "Activating data-protection modules...",
+        "Monitoring digital defense protocols...",
+        "System stable. Justice online."
+      ];
+      consoleBox.style.display = "block";
+      consoleBox.textContent = "";
+      let i = 0;
+      const interval = setInterval(() => {
+        consoleBox.textContent += lines[i] + "\n";
         i++;
-        if(i >= text.length){
-          clearInterval(interval);
-          consoleEl.textContent += "\\n";
-          setTimeout(resolve, 230 + Math.random()*300);
-        }
-      }, speed + Math.random()*8);
-    });
-  }
-
-  // update progress bar
-  function setProgress(p, label){
-    fill.style.width = Math.min(100, Math.round(p)) + "%";
-    ppct.textContent = Math.min(100, Math.round(p)) + "%";
-    plabel.textContent = label;
-  }
-
-  async function runConsole(){
-    consoleEl.textContent = "";
-    overlay.style.display = "block";
-    overlay.setAttribute('aria-hidden','false');
-    setProgress(3, "Initializing...");
-
-    await new Promise(r => setTimeout(r, 280));
-    let percent = 3;
-
-    for(let i=0;i<lines.length;i++){
-      await typeLine(lines[i]);
-      percent += Math.floor(70 / lines.length) + Math.floor(Math.random()*6);
-      if(percent > 94) percent = 94;
-      setProgress(percent, "Processing...");
+        if (i >= lines.length) clearInterval(interval);
+      }, 800);
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
-
-    // final ramp
-    await new Promise(r => setTimeout(r, 400));
-    let ramp = percent;
-    const rampInterval = setInterval(async () => {
-      ramp += Math.floor(3 + Math.random()*7);
-      setProgress(ramp, ramp < 100 ? "Finalizing..." : "ACCESS GRANTED");
-      if(ramp >= 100){
-        clearInterval(rampInterval);
-        await typeLine("ACCESS GRANTED. Welcome, Nahiyan.");
-        setProgress(100, "Complete");
-      }
-    }, 120);
-  }
-
-  exploreBtn.addEventListener('click', runConsole);
-  closeBtn.addEventListener('click', () => {
-    overlay.style.display = "none";
-    overlay.setAttribute('aria-hidden','true');
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if(e.key === 'Escape'){
-      overlay.style.display = "none";
-      overlay.setAttribute('aria-hidden','true');
-    }
-  });
-
-  // graceful fallback for missing avatar
-  const avatar = document.getElementById('avatar');
-  avatar.addEventListener('error', ()=>{ avatar.src = 'https://via.placeholder.com/400?text=NA' });
-})();
-</script>
+  </script>
 </body>
 </html>
