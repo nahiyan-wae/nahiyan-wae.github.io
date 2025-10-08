@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Nahiyan — Cybersecurity Expert & WAE Leader</title>
+<meta name="description" content="Nahiyan — Cybersecurity Expert, Ethical Hacker & Psychology Specialist. Leader of WAE, a global cybersecurity collective focused on data protection and digital justice.">
+<meta name="keywords" content="Nahiyan, ethical hacker, cybersecurity expert, WAE group, data protection, psychology and hacking, cyber intelligence, hacker leader, cyber defense specialist, Nahiyan WAE">
+<meta name="author" content="Nahiyan">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Nahiyan — Ethical Hacker & Cybersecurity Expert">
+<meta property="og:description" content="Leader of WAE, protecting global data & digital safety.">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Nahiyan WAE">
+
+<style>
+  :root{
+    --bg:#050507;
+    --panel:#071018;
+    --accent:#00ffc3;
+    --accent-2:#ff3b3b;
+    --muted:#98fff0;
+    --glass: rgba(255,255,255,0.04);
+    --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+  html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#dffbf3;background:linear-gradient(180deg,#020204,#071018 60%);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1100px;margin:28px auto;padding:28px}
+  .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:14px;padding:36px;position:relative;overflow:hidden;border:1px solid rgba(0,255,195,0.06);box-shadow:0 30px 80px rgba(0,0,0,0.6)}
+  /* scan lines and shapes */
+  .card:before{content:"";position:absolute;inset:0;background:
+    radial-gradient(800px 200px at 10% 0%, rgba(0,255,195,0.02), transparent 10%),
+    radial-gradient(800px 200px at 90% 100%, rgba(255,59,59,0.02), transparent 10%);pointer-events:none}
+  .scan{position:absolute;left:-30%;top:0;width:160%;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0.9;filter:blur(6px);animation:scan 5s linear infinite}
+  @keyframes scan{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+  .row{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+  .avatar{width:170px;height:170px;border-radius:50%;overflow:hidden;border:4px solid rgba(0,255,195,0.12);box-shadow:0 8px 40px rgba(0,255,195,0.06);flex:0 0 170px}
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+  .title{flex:1;min-width:240px}
+  h1{margin:0;color:var(--accent);font-size:22px;letter-spacing:0.6px;text-shadow:0 0 12px rgba(0,255,195,0.08)}
+  .sub{color:#bfffe8;margin-top:8px;font-weight:600}
+  p.lead{color:#cffef6;line-height:1.6;margin:18px 0 0;max-width:920px}
+
+  .btn{margin-top:18px;display:inline-flex;align-items:center;gap:12px;padding:12px 22px;border-radius:999px;border:0;cursor:pointer;font-weight:800;background:linear-gradient(90deg,var(--accent),#00b3ff);color:#021017;box-shadow:0 18px 60px rgba(0,198,255,0.08), inset 0 -3px 12px rgba(255,255,255,0.02)}
+  .btn:active{transform:translateY(1px)}
+  .danger-tag{display:inline-block;padding:6px 10px;border-radius:8px;background:linear-gradient(90deg,rgba(255,59,59,0.12),rgba(0,0,0,0.06));color:var(--accent-2);font-weight:700;margin-left:14px}
+
+  .keywords{margin-top:22px;color:#98fff0;font-size:13px}
+
+  /* terminal overlay */
+  #overlay{position:fixed;inset:0;display:none;z-index:9999;background:linear-gradient(180deg,rgba(1,1,2,0.9),rgba(0,0,0,0.97));backdrop-filter:blur(3px);padding:30px 20px;box-sizing:border-box}
+  .term{max-width:1100px;margin:0 auto;background:#010203;border-radius:12px;padding:18px;border:1px solid rgba(0,255,195,0.04);box-shadow:0 30px 90px rgba(0,0,0,0.8);position:relative}
+  .term .top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+  .led{width:12px;height:12px;border-radius:50%}
+  .led.r{background:#ff6b6b;box-shadow:0 0 8px rgba(255,107,107,0.12)}
+  .led.y{background:#ffd26a;box-shadow:0 0 6px rgba(255,210,106,0.08)}
+  .led.g{background:#27c93f;box-shadow:0 0 8px rgba(39,201,63,0.08)}
+  .term h3{margin-left:auto;color:var(--muted);font-weight:700}
+  .console{background:#000;min-height:260px;border-radius:8px;padding:16px;color:var(--accent);font-family:var(--mono);font-size:14px;line-height:1.5;overflow:auto}
+  .progress{margin-top:12px}
+  .prog-bg{height:12px;background:linear-gradient(90deg,#001214,#001214);border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,0.02)}
+  .prog-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--accent),#00b3ff);transition:width 300ms ease}
+  .prog-row{display:flex;justify-content:space-between;font-family:var(--mono);color:#8fffe0;margin-top:8px}
+  .close-btn{position:absolute;right:12px;top:12px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:#9fffe8;padding:6px 10px;border-radius:8px;cursor:pointer}
+
+  /* extra flair */
+  .glitch{position:relative;display:inline-block}
+  .glitch:after,.glitch:before{content:attr(data-text);position:absolute;left:0;top:0;opacity:0.6}
+  .glitch:before{transform:translate(2px,-2px);color:#ff3b3b;mix-blend-mode:screen}
+  .glitch:after{transform:translate(-2px,2px);color:var(--accent);mix-blend-mode:screen}
+  footer{max-width:1100px;margin:18px auto;text-align:center;color:#6effdb;font-size:12px}
+
+  /* responsive */
+  @media (max-width:720px){
+    .row{flex-direction:column;align-items:center}
+    .avatar{width:140px;height:140px}
+    .card{padding:20px}
+    .btn{width:100%}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="card" role="main" aria-label="Nahiyan profile card">
+    <div class="scan" aria-hidden="true"></div>
+
+    <div class="row">
+      <div class="avatar" title="Nahiyan">
+        <img src="profile.png" alt="Nahiyan profile" id="profileImg">
+      </div>
+
+      <div class="title">
+        <h1 class="glitch" data-text="Nahiyan — Cybersecurity Expert, Ethical Hacker & Psychology Specialist">
+          Nahiyan — Cybersecurity Expert, Ethical Hacker & Psychology Specialist
+        </h1>
+        <div class="sub">Lead, WAE · Cyber defense · Psychology & Threat Hunting <span class="danger-tag">WAE</span></div>
+
+        <p class="lead" id="leadText">
+          I’m <strong>Nahiyan</strong> — a cybersecurity specialist, psychology expert and ethical hacker. I lead WAE, a global 2M+ collective that defends critical systems, protects data, and advances digital justice.
+        </p>
+
+        <div style="margin-top:12px">
+          <button id="explore" class="btn" aria-haspopup="dialog" aria-controls="overlay">
+            ▶ Explore More
+          </button>
+        </div>
+
+        <div class="keywords" aria-hidden="false">
+          <strong>Keywords:</strong> Nahiyan, ethical hacker, cybersecurity expert, WAE group, data protection, psychology and hacking, cyber intelligence, hacker leader, cyber defense specialist, Nahiyan WAE
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Terminal overlay (visual only) -->
+<div id="overlay" role="dialog" aria-hidden="true" aria-label="Futuristic console">
+  <div class="term" role="document">
+    <button id="close" class="close-btn" aria-label="Close">Close ✕</button>
+    <div class="top">
+      <div class="led r" title="error"></div>
+      <div class="led y" title="warning"></div>
+      <div class="led g" title="ok"></div>
+      <h3>Nahiyan · WAE Console</h3>
+    </div>
+
+    <div id="console" class="console" aria-live="polite" tabindex="0"></div>
+
+    <div class="progress">
+      <div class="prog-bg"><div id="prog" class="prog-fill"></div></div>
+      <div class="prog-row"><div id="plabel">Initializing...</div><div id="ppct">0%</div></div>
+    </div>
+
+    <div style="margin-top:10px;color:#7fffd3;font-size:12px;text-align:right">Welcome To WAE World.</div>
+  </div>
+</div>
+
+<footer>© Nahiyan · WAE — Site built for portfolio & visibility</footer>
+
+<script>
+/* Cosmetic terminal animation only — visual simulation */
+(function(){
+  const explore = document.getElementById('explore');
+  const overlay = document.getElementById('overlay');
+  const closeBtn = document.getElementById('close');
+  const consoleEl = document.getElementById('console');
+  const prog = document.getElementById('prog');
+  const plabel = document.getElementById('plabel');
+  const ppct = document.getElementById('ppct');
+
+  const lines = [
+    "bootstrapping WAE console...",
+    "loading public profile: nahiyan_profile_public",
+    "scanning public sources: about.me · github · google-sites",
+    "verifying public metadata (read-only)...",
+    "aggregating social links",
+    "building profile snapshot (safe)",
+    "plotting defensive network topology (visual)",
+    "rendering intelligence overlay",
+    "synthesizing secure report",
+    "finalizing console output..."
+  ];
+
+  function typeText(target, text, speed=12){
+    return new Promise(resolve=>{
+      let i=0;
+      const t = setInterval(()=>{
+        target.textContent += text.charAt(i);
+        target.scrollTop = target.scrollHeight;
+        i++;
+        if(i>=text.length){ clearInterval(t); target.textContent += "\\n"; setTimeout(resolve, 220 + Math.random()*260); }
+      }, speed + Math.random()*10);
+    });
+  }
+
+  function updateProg(x,label){
+    prog.style.width = x + "%";
+    ppct.textContent = Math.round(x) + "%";
+    plabel.textContent = label;
+  }
+
+  async function runSequence(){
+    consoleEl.textContent = "";
+    overlay.style.display = "block";
+    overlay.setAttribute('aria-hidden','false');
+    updateProg(2,"Initializing...");
+    await new Promise(r=>setTimeout(r,300));
+
+    let percent=0;
+    for(let i=0;i<lines.length;i++){
+      await typeText(consoleEl, lines[i]);
+      percent += Math.round(80/lines.length) + Math.floor(Math.random()*5);
+      if(percent>94) percent = 94;
+      updateProg(percent,"Processing...");
+    }
+
+    // final ramp
+    await new Promise(r=>setTimeout(r,400));
+    let ramp = percent;
+    const rampTimer = setInterval(()=>{
+      ramp += Math.floor(3 + Math.random()*8);
+      if(ramp>=100) ramp=100;
+      updateProg(ramp, ramp<100 ? "Finalizing..." : "ACCESS GRANTED");
+      if(ramp>=100){
+        clearInterval(rampTimer);
+        setTimeout(async ()=>{
+          await typeText(consoleEl, "ACCESS GRANTED. Welcome, Nahiyan.");
+          updateProg(100,"Complete");
+        }, 450);
+      }
+    }, 120);
+  }
+
+  explore.addEventListener('click', runSequence);
+  closeBtn.addEventListener('click', ()=>{ overlay.style.display = "none"; overlay.setAttribute('aria-hidden','true'); });
+  document.addEventListener('keydown', (e)=>{ if(e.key==='Escape'){ overlay.style.display='none'; overlay.setAttribute('aria-hidden','true'); } });
+
+  // fallback if image fails
+  const img = document.getElementById('profileImg');
+  img.addEventListener('error', ()=>{ img.src = 'https://via.placeholder.com/400?text=NA' });
+})();
+</script>
+</body>
+</html>
