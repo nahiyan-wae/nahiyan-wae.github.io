@@ -2,73 +2,181 @@
   {
     "id": "operation_firewall",
     "title": "Operation Firewall",
-    "objective": "Analyze and reinforce global cyber defense nodes to prevent coordinated attacks on critical infrastructure.",
+    "objective": "Analyze and reinforce global cyber defense nodes to prevent coordinated attacks on national infrastructure. Deploy machine-learning intrusion prevention and adaptive firewall models across all WAE partner networks.",
     "status": "Active",
     "priority": 1,
+    "progress": 78,
     "created_at": "2025-10-27T10:00:00Z",
-    "tags": ["network", "defense", "infrastructure"]
+    "tags": ["network", "defense", "infrastructure", "ai"],
+    "sub_objectives": [
+      "Deploy AI-based anomaly detection to all defense hubs",
+      "Patch critical vulnerabilities in global traffic gateways",
+      "Run penetration simulation for verification"
+    ]
   },
   {
     "id": "project_shield",
     "title": "Project Shield",
-    "objective": "Develop advanced threat detection algorithms using machine learning and behavioral analysis.",
+    "objective": "Develop next-generation threat detection algorithms powered by behavioral analytics and predictive modeling. This operation is focused on detecting and neutralizing early signs of AI-driven attacks.",
     "status": "Active",
     "priority": 2,
+    "progress": 65,
     "created_at": "2025-10-20T14:30:00Z",
-    "tags": ["ai", "research", "development"]
+    "tags": ["ai", "research", "detection", "protection"],
+    "sub_objectives": [
+      "Build predictive detection engine",
+      "Simulate adversarial machine learning scenarios",
+      "Deploy prototype for pilot testing"
+    ]
   },
   {
     "id": "data_guardian",
     "title": "Data Guardian Initiative",
-    "objective": "Secure sensitive government databases and implement zero-trust architecture across all access points.",
+    "objective": "Secure global government databases using zero-trust architecture and dynamic encryption. Coordinate cross-border teams to enforce digital sovereignty policies.",
     "status": "Pending",
     "priority": 1,
+    "progress": 42,
     "created_at": "2025-10-15T09:15:00Z",
-    "tags": ["data-protection", "government", "zero-trust"]
+    "tags": ["data", "government", "zero-trust", "encryption"],
+    "sub_objectives": [
+      "Audit data access logs across five agencies",
+      "Deploy identity-token authentication layers",
+      "Test automated breach response protocols"
+    ]
   },
   {
     "id": "phantom_breach",
     "title": "Phantom Breach Analysis",
-    "objective": "Investigate and contain sophisticated APT group activities targeting financial institutions.",
+    "objective": "Investigate advanced persistent threat (APT) group operations targeting the global banking sector. Conduct forensic correlation between attack vectors and known state-sponsored campaigns.",
     "status": "Active",
     "priority": 1,
+    "progress": 72,
     "created_at": "2025-10-10T16:45:00Z",
-    "tags": ["investigation", "apt", "financial"]
+    "tags": ["apt", "forensics", "finance", "intel"],
+    "sub_objectives": [
+      "Collect and analyze breach telemetry",
+      "Identify attacker TTPs (tactics, techniques, procedures)",
+      "Generate report for WAE Intelligence Division"
+    ]
   },
   {
     "id": "cyber_awareness",
     "title": "Global Cyber Awareness",
-    "objective": "Launch international cybersecurity education program for organizations and individuals.",
+    "objective": "Launch international cybersecurity awareness and digital safety training across universities and organizations under WAE supervision.",
     "status": "Completed",
     "priority": 3,
+    "progress": 100,
     "created_at": "2025-09-28T11:20:00Z",
-    "tags": ["education", "awareness", "global"]
+    "tags": ["education", "training", "awareness", "community"],
+    "sub_objectives": [
+      "Design 12-module cybersecurity curriculum",
+      "Host WAE Global Security Week 2025",
+      "Certify 25,000 participants worldwide"
+    ]
   },
   {
     "id": "dark_web_monitor",
     "title": "Dark Web Monitoring",
-    "objective": "Establish continuous monitoring of dark web markets for stolen credentials and threat intelligence.",
+    "objective": "Implement 24/7 surveillance on dark web forums to detect sale of stolen credentials and new exploit kits. Provide intelligence to global CERT partners.",
     "status": "Completed",
     "priority": 2,
+    "progress": 100,
     "created_at": "2025-09-15T13:10:00Z",
-    "tags": ["intelligence", "monitoring", "dark-web"]
+    "tags": ["intelligence", "dark-web", "monitoring", "law-enforcement"],
+    "sub_objectives": [
+      "Deploy crawler for darknet credential dumps",
+      "Correlate leaks with enterprise alerts",
+      "Forward actionable findings to law enforcement"
+    ]
   },
   {
     "id": "quantum_prep",
     "title": "Quantum Readiness",
-    "objective": "Prepare cryptographic systems for post-quantum security requirements and migration timelines.",
+    "objective": "Prepare all WAE systems for post-quantum encryption by testing lattice-based key exchange algorithms and quantum-safe ciphers.",
     "status": "Pending",
     "priority": 2,
+    "progress": 30,
     "created_at": "2025-09-10T08:30:00Z",
-    "tags": ["quantum", "cryptography", "future-proofing"]
+    "tags": ["quantum", "cryptography", "research", "future"],
+    "sub_objectives": [
+      "Benchmark NIST PQC algorithm performance",
+      "Develop migration toolkit for enterprise use",
+      "Train WAE members on PQC implementation"
+    ]
   },
   {
     "id": "red_team_exercise",
     "title": "Red Team Exercise: Titan",
-    "objective": "Simulate advanced persistent threat to test organizational resilience and response capabilities.",
+    "objective": "Simulate multi-vector cyberattacks against WAE defense infrastructure to measure response accuracy and containment efficiency.",
     "status": "Cancelled",
     "priority": 3,
+    "progress": 10,
     "created_at": "2025-08-25T15:55:00Z",
-    "tags": ["testing", "simulation", "red-team"]
+    "tags": ["simulation", "testing", "resilience"],
+    "sub_objectives": [
+      "Setup virtual red team infrastructure",
+      "Execute spear-phishing simulation",
+      "Abort operation following updated legal guidelines"
+    ]
+  },
+  {
+    "id": "operation_aurora",
+    "title": "Operation Aurora Sentinel",
+    "objective": "Deploy WAE satellite-linked sensors across telecom networks to detect zero-day exploits targeting 5G and IoT infrastructure.",
+    "status": "Active",
+    "priority": 1,
+    "progress": 82,
+    "created_at": "2025-10-01T07:50:00Z",
+    "tags": ["telecom", "zero-day", "detection", "5g"],
+    "sub_objectives": [
+      "Install 5G anomaly detectors in 10 global nodes",
+      "Report on exploit traffic patterns",
+      "Coordinate disclosure with affected providers"
+    ]
+  },
+  {
+    "id": "psychoscan",
+    "title": "Project PsychoScan",
+    "objective": "Integrate psychological threat modeling into AI-driven cyber intelligence pipelines to identify manipulation-based social attacks.",
+    "status": "Active",
+    "priority": 2,
+    "progress": 56,
+    "created_at": "2025-10-18T12:05:00Z",
+    "tags": ["psychology", "ai", "intel", "social-engineering"],
+    "sub_objectives": [
+      "Develop NLP model for persuasion detection",
+      "Analyze 500+ phishing campaigns",
+      "Deploy cognitive firewall prototype"
+    ]
+  },
+  {
+    "id": "atlas_recover",
+    "title": "Atlas Recovery Operation",
+    "objective": "Coordinate multi-national data recovery efforts following ransomware attacks targeting logistics systems.",
+    "status": "Completed",
+    "priority": 1,
+    "progress": 100,
+    "created_at": "2025-09-02T09:00:00Z",
+    "tags": ["recovery", "ransomware", "forensics", "logistics"],
+    "sub_objectives": [
+      "Decrypt and restore affected database clusters",
+      "Rebuild logistics API endpoints",
+      "Validate recovered data integrity"
+    ]
+  },
+  {
+    "id": "code_ethics",
+    "title": "Code Ethics Framework",
+    "objective": "Develop WAE’s global cybersecurity ethics policy ensuring responsible AI use and data transparency.",
+    "status": "Pending",
+    "priority": 3,
+    "progress": 44,
+    "created_at": "2025-10-05T10:20:00Z",
+    "tags": ["policy", "ethics", "ai", "transparency"],
+    "sub_objectives": [
+      "Define ethical AI governance structure",
+      "Collaborate with universities and NGOs",
+      "Publish open-source WAE Code Ethics Guide"
+    ]
   }
-]
+    ]
