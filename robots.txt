@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /missions.json
+Crawl-delay: 1
+
+Sitemap: https://nahiyan-wae.github.io/sitemap.xml
+
+# WAE Mission Control - Cybersecurity Platform
+# Managed by Nahiyan | World Alliance of Ethical Hackers
+# Protecting digital justice and global data security

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operation Logs | WAE Mission Control</title>
+  <meta name="description" content="Completed mission archives - WAE Mission Control operation history">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Operation Logs</h1>
+    <h2>Completed Mission Archives</h2>
+
+    <div class="console">
+      <div class="console-line">> Accessing historical mission database...</div>
+      <div class="console-line">> Filter: Status = COMPLETED</div>
+      <div class="console-line">> Retrieving mission archives...</div>
+    </div>
+
+    <div class="missions-grid" id="missionsContainer">
+      <!-- Completed missions will be loaded dynamically -->
+    </div>
+
+    <div class="nav-buttons">
+      <a href="index.html" class="explore-btn">Home</a>
+      <a href="missions.html" class="explore-btn">Active Missions</a>
+      <a href="terminal.html" class="explore-btn btn-secondary">AI Terminal</a>
+    </div>
+
+    <footer>Powered by Nahiyan | WAE</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

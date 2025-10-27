@@ -1,0 +1,341 @@
+/* WAE Mission Control - Global Styles */
+:root {
+  --bg-dark: #030817;
+  --primary-neon: #4aa3ff;
+  --accent-glow: #00ffcc;
+  --text-light: #e0e6ff;
+  --card-bg: rgba(10, 25, 60, 0.4);
+  --shadow-glow: 0 0 25px #001a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Typography */
+h1 {
+  color: var(--primary-neon);
+  font-size: 2.4rem;
+  text-shadow: 0 0 20px var(--primary-neon);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #b0c4ff;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+h3 {
+  color: var(--primary-neon);
+  margin: 1.5rem 0 1rem 0;
+}
+
+/* Navigation & Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.explore-btn {
+  background: linear-gradient(90deg, #007bff, #4f9cff);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #007bffb3;
+  font-family: inherit;
+}
+
+.explore-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--primary-neon);
+}
+
+.btn-secondary {
+  background: linear-gradient(90deg, #6c757d, #868e96);
+  box-shadow: 0 0 15px #6c757db3;
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #28a745, #20c997);
+  box-shadow: 0 0 15px #28a745b3;
+}
+
+/* Console Elements */
+.console {
+  background: rgba(10, 25, 60, 0.8);
+  border-radius: 12px;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 800px;
+  padding: 1.5rem;
+  text-align: left;
+  font-family: "Courier New", monospace;
+  color: #4fc3f7;
+  box-shadow: var(--shadow-glow);
+  min-height: 200px;
+  overflow-y: auto;
+}
+
+.console-line {
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.typing {
+  border-right: 2px solid var(--accent-glow);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { border-color: var(--accent-glow); }
+  51%, 100% { border-color: transparent; }
+}
+
+/* Mission Cards */
+.missions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.mission-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: var(--shadow-glow);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+}
+
+.mission-card.active {
+  border-color: var(--accent-glow);
+  box-shadow: 0 0 25px var(--accent-glow);
+}
+
+.mission-card.pending {
+  border-color: #ffd700;
+  box-shadow: 0 0 25px #ffd700;
+}
+
+.mission-card.completed {
+  border-color: #28a745;
+  box-shadow: 0 0 25px #28a745;
+}
+
+.mission-card.cancelled {
+  border-color: #dc3545;
+  box-shadow: 0 0 25px #dc3545;
+}
+
+.mission-header {
+  display: flex;
+  justify-content: between;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.mission-title {
+  color: var(--primary-neon);
+  font-size: 1.2rem;
+  margin: 0;
+  flex: 1;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-active { background: #00ffcc20; color: var(--accent-glow); }
+.status-pending { background: #ffd70020; color: #ffd700; }
+.status-completed { background: #28a74520; color: #28a745; }
+.status-cancelled { background: #dc354520; color: #dc3545; }
+
+.mission-meta {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #8fa8d8;
+}
+
+.priority {
+  font-weight: bold;
+}
+
+.priority-1 { color: #dc3545; }
+.priority-2 { color: #ffd700; }
+.priority-3 { color: var(--primary-neon); }
+
+.mission-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background: rgba(74, 163, 255, 0.2);
+  color: var(--primary-neon);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+/* Content Sections */
+.content-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: left;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow-glow);
+}
+
+.profile-img {
+  border-radius: 50%;
+  box-shadow: 0 0 40px #007bff80;
+  width: 160px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+/* Footer & Links */
+footer {
+  margin: 3rem 0 1rem 0;
+  color: #8fa8d8;
+  font-size: 0.9rem;
+}
+
+.back-link {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.back-link a {
+  color: var(--primary-neon);
+  text-decoration: none;
+}
+
+/* Resources List */
+.resources-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resources-list li {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.resources-list li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(10px);
+}
+
+.resources-list a {
+  color: var(--primary-neon);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+.resources-list .description {
+  color: #8fa8d8;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .explore-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .missions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mission-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

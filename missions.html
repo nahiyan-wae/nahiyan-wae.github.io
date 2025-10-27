@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mission Board | WAE Mission Control</title>
+  <meta name="description" content="Active and pending missions - WAE Mission Control operations dashboard">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>WAE Mission Board</h1>
+    <h2>Active Operations & Pending Assignments</h2>
+
+    <div class="console">
+      <div class="console-line">> Accessing mission database...</div>
+      <div class="console-line">> Displaying all active and pending operations</div>
+      <div class="console-line">> Mission count: Loading...</div>
+    </div>
+
+    <div class="missions-grid" id="missionsContainer">
+      <!-- Missions will be loaded dynamically -->
+    </div>
+
+    <div class="nav-buttons">
+      <a href="index.html" class="explore-btn">Home</a>
+      <a href="terminal.html" class="explore-btn btn-secondary">AI Terminal</a>
+      <a href="logs.html" class="explore-btn btn-success">Completed Missions</a>
+    </div>
+
+    <footer>Powered by Nahiyan | WAE</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
