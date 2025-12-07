@@ -17,7 +17,7 @@
   {
     "id": "project_shield",
     "title": "Project Shield",
-    "objective": "Develop next-generation threat detection algorithms powered by behavioral analytics and predictive modeling. This operation is focused on detecting early signs of AI-driven attacks.",
+    "objective": "Develop next-generation threat detection algorithms powered by behavioral analytics and predictive modeling. This operation is focused on detecting and neutralizing early signs of AI-driven attacks.",
     "status": "Active",
     "priority": 2,
     "progress": 65,
@@ -32,7 +32,7 @@
   {
     "id": "data_guardian",
     "title": "Data Guardian Initiative",
-    "objective": "Secure global government databases using zero-trust architecture and dynamic encryption.",
+    "objective": "Secure global government databases using zero-trust architecture and dynamic encryption. Coordinate cross-border teams to enforce digital sovereignty policies.",
     "status": "Pending",
     "priority": 1,
     "progress": 42,
@@ -47,7 +47,7 @@
   {
     "id": "phantom_breach",
     "title": "Phantom Breach Analysis",
-    "objective": "Investigate advanced persistent threat (APT) operations targeting the global banking sector.",
+    "objective": "Investigate advanced persistent threat (APT) group operations targeting the global banking sector. Conduct forensic correlation between attack vectors and known state-sponsored campaigns.",
     "status": "Active",
     "priority": 1,
     "progress": 72,
@@ -55,14 +55,14 @@
     "tags": ["apt", "forensics", "finance", "intel"],
     "sub_objectives": [
       "Collect and analyze breach telemetry",
-      "Identify attacker TTPs",
+      "Identify attacker TTPs (tactics, techniques, procedures)",
       "Generate report for WAE Intelligence Division"
     ]
   },
   {
     "id": "cyber_awareness",
     "title": "Global Cyber Awareness",
-    "objective": "Launch international cybersecurity awareness and digital safety training under WAE supervision.",
+    "objective": "Launch international cybersecurity awareness and digital safety training across universities and organizations under WAE supervision.",
     "status": "Completed",
     "priority": 3,
     "progress": 100,
@@ -77,22 +77,22 @@
   {
     "id": "dark_web_monitor",
     "title": "Dark Web Monitoring",
-    "objective": "Implement 24/7 surveillance on dark web forums to detect sale of stolen credentials and exploit kits.",
+    "objective": "Implement 24/7 surveillance on dark web forums to detect sale of stolen credentials and new exploit kits. Provide intelligence to global CERT partners.",
     "status": "Completed",
     "priority": 2,
     "progress": 100,
     "created_at": "2025-09-15T13:10:00Z",
-    "tags": ["intelligence", "dark-web", "monitoring"],
+    "tags": ["intelligence", "dark-web", "monitoring", "law-enforcement"],
     "sub_objectives": [
       "Deploy crawler for darknet credential dumps",
       "Correlate leaks with enterprise alerts",
-      "Forward actionable findings to the appropriate channels"
+      "Forward actionable findings to law enforcement"
     ]
   },
   {
     "id": "quantum_prep",
     "title": "Quantum Readiness",
-    "objective": "Prepare WAE systems for post-quantum encryption by testing lattice-based key exchange algorithms and quantum-safe ciphers.",
+    "objective": "Prepare all WAE systems for post-quantum encryption by testing lattice-based key exchange algorithms and quantum-safe ciphers.",
     "status": "Pending",
     "priority": 2,
     "progress": 30,
@@ -107,7 +107,7 @@
   {
     "id": "red_team_exercise",
     "title": "Red Team Exercise: Titan",
-    "objective": "Simulate multi-vector cyberattacks against WAE infrastructure to measure response accuracy and containment efficiency.",
+    "objective": "Simulate multi-vector cyberattacks against WAE defense infrastructure to measure response accuracy and containment efficiency.",
     "status": "Cancelled",
     "priority": 3,
     "progress": 10,
@@ -116,13 +116,13 @@
     "sub_objectives": [
       "Setup virtual red team infrastructure",
       "Execute spear-phishing simulation",
-      "Abort operation following protocol updates"
+      "Abort operation following updated legal guidelines"
     ]
   },
   {
     "id": "operation_aurora",
     "title": "Operation Aurora Sentinel",
-    "objective": "Deploy satellite-linked sensors across telecom networks to detect zero-day exploits targeting 5G and IoT systems.",
+    "objective": "Deploy WAE satellite-linked sensors across telecom networks to detect zero-day exploits targeting 5G and IoT infrastructure.",
     "status": "Active",
     "priority": 1,
     "progress": 82,
@@ -137,7 +137,7 @@
   {
     "id": "psychoscan",
     "title": "Project PsychoScan",
-    "objective": "Integrate psychological threat modeling into AI-driven cyber intelligence pipelines.",
+    "objective": "Integrate psychological threat modeling into AI-driven cyber intelligence pipelines to identify manipulation-based social attacks.",
     "status": "Active",
     "priority": 2,
     "progress": 56,
@@ -154,7 +154,7 @@
     "title": "Atlas Recovery Operation",
     "objective": "Coordinate multi-national data recovery efforts following ransomware attacks targeting logistics systems.",
     "status": "Completed",
-    "priority": 1",
+    "priority": 1,
     "progress": 100,
     "created_at": "2025-09-02T09:00:00Z",
     "tags": ["recovery", "ransomware", "forensics", "logistics"],
@@ -167,124 +167,121 @@
   {
     "id": "code_ethics",
     "title": "Code Ethics Framework",
-    "objective": "Develop WAE’s global cybersecurity policy framework.",
+    "objective": "Develop WAE's global cybersecurity ethics policy ensuring responsible AI use and data transparency.",
     "status": "Pending",
     "priority": 3,
     "progress": 44,
     "created_at": "2025-10-05T10:20:00Z",
-    "tags": ["policy", "ai", "transparency"],
+    "tags": ["policy", "ethics", "ai", "transparency"],
     "sub_objectives": [
-      "Define AI governance structure",
-      "Draft guidelines with expert groups",
-      "Publish WAE Code Guide"
+      "Define ethical AI governance structure",
+      "Collaborate with universities and NGOs",
+      "Publish open-source WAE Code Ethics Guide"
     ]
   },
-
-  /* NEW ADVANCED HACKING MISSIONS */
-
   {
     "id": "black_cipher",
     "title": "Operation BlackCipher",
-    "objective": "Reverse-engineer encrypted malware strains and expose hidden infrastructures.",
+    "objective": "Reverse-engineer encrypted malware strains and expose hidden infrastructures. Track communication patterns to identify covert command centers.",
     "status": "Active",
     "priority": 1,
-    "progress": 0,
+    "progress": 15,
     "created_at": "2025-12-07T11:00:00Z",
     "tags": ["malware", "reverse-engineering", "crypto-analysis", "intel"],
     "sub_objectives": [
-      "Capture live samples",
-      "Map C2 communication protocols",
-      "Decrypt payload architecture"
+      "Capture live malware samples from threat actors",
+      "Map C2 communication protocols and encryption methods",
+      "Decrypt payload architecture and expose hidden infrastructure"
     ]
   },
   {
     "id": "ghost_relay",
     "title": "Project GhostRelay",
-    "objective": "Trace covert relay nodes used for hidden data exfiltration in enterprise networks.",
+    "objective": "Trace covert relay nodes used for hidden data exfiltration in enterprise networks. Identify and neutralize stealthy data transfer mechanisms.",
     "status": "Active",
     "priority": 1,
-    "progress": 0,
+    "progress": 22,
     "created_at": "2025-12-07T11:05:00Z",
-    "tags": ["network", "exfiltration", "traffic-analysis"],
+    "tags": ["network", "exfiltration", "traffic-analysis", "forensics"],
     "sub_objectives": [
-      "Identify anomalous micro-burst traffic",
-      "Reconstruct relay topology",
-      "Patch outbound tunnels"
+      "Identify anomalous micro-burst traffic patterns",
+      "Reconstruct relay topology and entry points",
+      "Patch outbound tunnels and secure network perimeters"
     ]
   },
   {
     "id": "shadow_pulse",
     "title": "Operation ShadowPulse",
-    "objective": "Analyze stealth exploit kits built for low-frequency covert penetration attempts.",
+    "objective": "Analyze stealth exploit kits built for low-frequency covert penetration attempts targeting critical infrastructure.",
     "status": "Pending",
     "priority": 2,
-    "progress": 0,
+    "progress": 5,
     "created_at": "2025-12-07T11:10:00Z",
     "tags": ["zero-day", "infrastructure", "stealth", "analysis"],
     "sub_objectives": [
-      "Break down exploit chains",
-      "Simulate kit impact",
-      "Build counter-scripts"
+      "Break down complex exploit chains and delivery mechanisms",
+      "Simulate kit impact on critical infrastructure systems",
+      "Build and deploy counter-scripts for known vulnerabilities"
     ]
   },
   {
     "id": "specter_osint",
     "title": "Specter OSINT Grid",
-    "objective": "Create a reconnaissance grid for tracking cyber threat clusters across intelligence surfaces.",
+    "objective": "Create a reconnaissance grid for tracking cyber threat clusters across intelligence surfaces. Automate correlation of disparate threat data sources.",
     "status": "Active",
     "priority": 2,
-    "progress": 0,
+    "progress": 38,
     "created_at": "2025-12-07T11:15:00Z",
-    "tags": ["osint", "tracking", "intel", "mapping"],
+    "tags": ["osint", "tracking", "intel", "mapping", "automation"],
     "sub_objectives": [
-      "Automate threat feed ingestion",
-      "Correlate cluster movement",
-      "Update signature library"
+      "Automate threat feed ingestion from dark web and surface sources",
+      "Correlate cluster movement and identify emerging threat actors",
+      "Update global signature library with new threat patterns"
     ]
   },
   {
     "id": "phantom_strike",
     "title": "Protocol PhantomStrike",
-    "objective": "Identify deep-network blindspots created by misconfigured legacy machines.",
+    "objective": "Identify deep-network blindspots created by misconfigured legacy machines and undocumented network segments.",
     "status": "Active",
     "priority": 1,
-    "progress": 0,
+    "progress": 28,
     "created_at": "2025-12-07T11:20:00Z",
-    "tags": ["network", "legacy-systems", "mapping"],
+    "tags": ["network", "legacy-systems", "mapping", "vulnerability"],
     "sub_objectives": [
-      "Scan for silent ports",
-      "Trace deep-layer routing",
-      "Rewrite defense rules"
+      "Scan for silent ports and undocumented network segments",
+      "Trace deep-layer routing paths and identify exposure points",
+      "Rewrite defense rules and implement segmentation policies"
     ]
   },
   {
     "id": "quantum_vault_sim",
-    "title": "Quantum Vault Intrusion Sim",
-    "objective": "Simulate intrusion attempts against quantum-secure data vaults.",
+    "title": "Quantum Vault Intrusion Simulation",
+    "objective": "Simulate intrusion attempts against quantum-secure data vaults to identify potential weaknesses in post-quantum cryptography implementations.",
     "status": "Pending",
     "priority": 2,
-    "progress": 0,
+    "progress": 12,
     "created_at": "2025-12-07T11:25:00Z",
-    "tags": ["quantum", "simulation", "crypto"],
+    "tags": ["quantum", "simulation", "cryptography", "testing"],
     "sub_objectives": [
-      "Develop hybrid-attack scripts",
-      "Benchmark vault resilience",
-      "Optimize shield layers"
+      "Develop hybrid-attack scripts combining classical and quantum methods",
+      "Benchmark vault resilience under various attack scenarios",
+      "Optimize shield layers and update quantum defense protocols"
     ]
   },
   {
     "id": "neural_vector_trace",
     "title": "Neural Vector Trace",
-    "objective": "Track AI-guided intrusion attempts by tracing neural pattern signatures.",
+    "objective": "Track AI-guided intrusion attempts by tracing neural pattern signatures and machine learning attack vectors.",
     "status": "Active",
     "priority": 1,
-    "progress": 0,
+    "progress": 45,
     "created_at": "2025-12-07T11:30:00Z",
-    "tags": ["ai", "pattern-analysis", "intrusion-detection"],
+    "tags": ["ai", "pattern-analysis", "intrusion-detection", "machine-learning"],
     "sub_objectives": [
-      "Extract attack embeddings",
-      "Cluster intrusion styles",
-      "Deploy updated vector shields"
+      "Extract attack embeddings and neural signatures from intrusion attempts",
+      "Cluster intrusion styles and identify AI-driven attack patterns",
+      "Deploy updated vector shields with adaptive machine learning defenses"
     ]
   }
 ]
